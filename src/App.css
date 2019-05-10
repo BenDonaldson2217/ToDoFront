@@ -1,0 +1,57 @@
+
+body {background-color: hsl(145, 100%,50%);
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+height: 100%;
+padding-top: 10px;
+border-top: 10px}
+
+#taskinput{
+    width: 90%;
+    border-radius: 20px;
+}
+button{
+    border-radius: 20px;
+
+}
+
+
+
+#list {
+        background-color: #ffff88;
+           width: 100%;
+}
+
+tr{ 
+    border: solid;
+    border-width: 1px 0;
+}
+
+.tick{
+    width:30px;
+    height: auto;
+}
+
+.completed{
+    text-decoration: line-through;
+}
+
+h1{
+  text-align: center;
+}
+
+.grey {
+    background-color:grey;
+}
+
+.bottom{
+    height: 100%
+}
+
+Container{
+    padding: 0;
+    border: 0;
+
+}
+
+
+
