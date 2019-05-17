@@ -55,7 +55,7 @@ export default class SignUp extends Component {
 
         else if (this.state.confirmpassword === this.state.password) {
 
-            let checkURL = "http://localhost:8080/api/v1/users/" + this.state.userName;
+            let checkURL = "/api/v1/users/" + this.state.userName;
             let checkRequest = new XMLHttpRequest();
             checkRequest.open('Get', checkURL);
             checkRequest.responseType = "json";
@@ -64,7 +64,7 @@ export default class SignUp extends Component {
                 if (checkRequest.response.number === 1) {
                     
 
-                    let URL = "http://localhost:8080/api/v1/user";
+                    let URL = "/api/v1/user";
                     let request = new XMLHttpRequest();
                     let body = { userName: this.state.userName, password: this.state.password };
 
