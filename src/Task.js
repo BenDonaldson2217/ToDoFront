@@ -35,7 +35,7 @@ export default class Task extends Component {
 
 
     deleted = () => {
-        let URL = "http://localhost:8080/api/v2/items/" + this.props.taskid;
+        let URL = "/api/v2/items/" + this.props.taskid;
         let request = new XMLHttpRequest();
         request.open('Delete', URL);
         request.setRequestHeader("Content-Type", "application/json");
@@ -46,7 +46,7 @@ export default class Task extends Component {
     }
 
     completed = () => {
-        let URL = "http://localhost:8080/api/v2/items/" + this.props.taskid;
+        let URL = "/api/v2/items/" + this.props.taskid;
         let request = new XMLHttpRequest();
         request.open('Put', URL);
         request.setRequestHeader("Content-Type", "application/json");
