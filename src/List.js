@@ -61,7 +61,7 @@ export default class List extends Component {
 
 
     loadList = () => {
-        let URL = "http://localhost:8080/api/v2/items";
+        let URL = "/api/v2/items";
         let request = new XMLHttpRequest();
         request.open('Get', URL);
         request.responseType = "json";
@@ -76,7 +76,7 @@ export default class List extends Component {
 
 
     addTask = (e) => {
-        let URL = "http://localhost:8080/api/v2/items";
+        let URL = "/api/v2/items";
         let request = new XMLHttpRequest();
         let body = { name: this.state.task, userID: this.props.user, listType: this.props.listType };
 
