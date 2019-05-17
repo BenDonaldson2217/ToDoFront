@@ -32,7 +32,7 @@ export default class MoreLists extends Component {
     deleteList = (e) => {
         let id = e.target.className;
 
-        let URL = "http://localhost:8080/api/v3/lists/" + id;
+        let URL = "/api/v3/lists/" + id;
         let request = new XMLHttpRequest();
         request.open('Delete', URL);
         request.responseType = "json";
