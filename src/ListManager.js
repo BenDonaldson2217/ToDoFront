@@ -52,7 +52,7 @@ export default class ListManager extends Component {
     }
 
     addList = (e) => {
-        let URL = "http://localhost:8080/api/v3/lists";
+        let URL = "/api/v3/lists";
         let request = new XMLHttpRequest();
         let body = { listType: this.state.newList, userId: this.props.user };
 
@@ -75,7 +75,7 @@ export default class ListManager extends Component {
 
     componentDidMount() {
 
-        let URL = "http://localhost:8080/api/v3/lists";
+        let URL = "/api/v3/lists";
         let request = new XMLHttpRequest();
         request.open('Get', URL);
         request.responseType = "json";
