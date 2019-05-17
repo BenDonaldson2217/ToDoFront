@@ -34,7 +34,7 @@ export default class Login extends Component {
             this.setState({ status: "-1", userName: "", password: "" })
         }
         else {
-            let URL = "http://localhost:8080/api/v1/user/" + this.state.userName + "/" + this.state.password;
+            let URL = "/api/v1/user/" + this.state.userName + "/" + this.state.password;
             let request = new XMLHttpRequest();
             request.open('Get', URL);
             request.responseType = "json";
